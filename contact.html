@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Interactive Systems</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Interactive Systems</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Our Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="projects.html" class="nav-link">Our Projects</a>
+                <a href="clients.html" class="nav-link">Our Clients</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Ready to transform your digital experience? Get in touch with our experts to discuss your touch technology needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Contact Form -->
+                <div>
+                    <h2 style="margin-bottom: 2rem; color: var(--text-dark);">Get a Free Consultation</h2>
+                    <form onsubmit="handleContactForm(event)" style="background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow);">
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-dark);">Full Name *</label>
+                            <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; border: 2px solid var(--secondary-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--secondary-color)'">
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-dark);">Email Address *</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 2px solid var(--secondary-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--secondary-color)'">
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-dark);">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" style="width: 100%; padding: 12px; border: 2px solid var(--secondary-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--secondary-color)'">
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-dark);">Company/Organization</label>
+                            <input type="text" id="company" name="company" style="width: 100%; padding: 12px; border: 2px solid var(--secondary-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--secondary-color)'">
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="industry" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-dark);">Industry</label>
+                            <select id="industry" name="industry" style="width: 100%; padding: 12px; border: 2px solid var(--secondary-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--secondary-color)'">
+                                <option value="">Select an industry</option>
+                                <option value="education">Education</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="retail">Retail</option>
+                                <option value="corporate">Corporate</option>
+                                <option value="government">Government</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="hospitality">Hospitality</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="service" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-dark);">Service Interest</label>
+                            <select id="service" name="service" style="width: 100%; padding: 12px; border: 2px solid var(--secondary-color); border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--secondary-color)'">
+                                <option value="">Select a service</option>
+                                <option value="touch-screens">Touch Screen Solutions</option>
+                                <option value="multi-touch">Multi-Touch Systems</option>
+                                <option value="multi-process">Multi-Process Solutions</option>
+                                <option value="custom-development">Custom Software Development</option>
+                                <option value="installation">Installation & Setup</option>
+                                <option value="support">Support & Maintenance</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-dark);">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your project requirements, timeline, and any specific needs..." style="width: 100%; padding: 12px; border: 2px solid var(--secondary-color); border-radius: 8px; font-size: 1rem; resize: vertical; transition: border-color 0.3s ease;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='var(--secondary-color)'"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 style="margin-bottom: 2rem; color: var(--text-dark);">Get in Touch</h2>
+                    
+                    <div style="background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Contact Information</h3>
+                        
+                        <div style="margin-bottom: 1.5rem; display: flex; align-items: center;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <i class="fas fa-phone" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600; color: var(--text-dark);">Phone</div>
+                                <div style="color: var(--text-light);">+1 (555) 123-4567</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem; display: flex; align-items: center;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600; color: var(--text-dark);">Email</div>
+                                <div style="color: var(--text-light);">info@interactivesystems.com</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem; display: flex; align-items: center;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600; color: var(--text-dark);">Address</div>
+                                <div style="color: var(--text-light);">123 Tech Street<br>Innovation City, IC 12345</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <i class="fas fa-clock" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600; color: var(--text-dark);">Business Hours</div>
+                                <div style="color: var(--text-light);">Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Regional Offices</h3>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <div style="font-weight: 600; color: var(--text-dark);">North America</div>
+                            <div style="color: var(--text-light); font-size: 0.9rem;">New York, Chicago, Los Angeles, Toronto</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <div style="font-weight: 600; color: var(--text-dark);">Europe</div>
+                            <div style="color: var(--text-light); font-size: 0.9rem;">London, Berlin, Paris, Amsterdam</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <div style="font-weight: 600; color: var(--text-dark);">Asia Pacific</div>
+                            <div style="color: var(--text-light); font-size: 0.9rem;">Tokyo, Singapore, Sydney, Hong Kong</div>
+                        </div>
+                    </div>
+
+                    <div style="background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow);">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Follow Us</h3>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="#" style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-dark)'" onmouseout="this.style.backgroundColor='var(--primary-color)'">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-dark)'" onmouseout="this.style.backgroundColor='var(--primary-color)'">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-dark)'" onmouseout="this.style.backgroundColor='var(--primary-color)'">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-dark)'" onmouseout="this.style.backgroundColor='var(--primary-color)'">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="background-color: var(--secondary-color); padding: 80px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--text-dark);">Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: var(--white); border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 1rem; overflow: hidden;">
+                    <button onclick="toggleFAQ(this)" style="width: 100%; padding: 1.5rem; background: none; border: none; text-align: left; font-size: 1.1rem; font-weight: 600; color: var(--text-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        What sizes of touch displays do you offer?
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s ease;"></i>
+                    </button>
+                    <div style="padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                        <p style="padding-bottom: 1.5rem; color: var(--text-light); line-height: 1.6;">We offer touch displays ranging from 32 inches to over 100 inches. Our solutions support both single-touch and multi-touch capabilities, with custom sizes available for specific requirements.</p>
+                    </div>
+                </div>
+
+                <div style="background: var(--white); border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 1rem; overflow: hidden;">
+                    <button onclick="toggleFAQ(this)" style="width: 100%; padding: 1.5rem; background: none; border: none; text-align: left; font-size: 1.1rem; font-weight: 600; color: var(--text-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        How long does installation typically take?
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s ease;"></i>
+                    </button>
+                    <div style="padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                        <p style="padding-bottom: 1.5rem; color: var(--text-light); line-height: 1.6;">Installation time varies based on project complexity. Single displays typically take 1-2 days, while larger implementations may take 1-2 weeks. We provide detailed timelines during the consultation phase.</p>
+                    </div>
+                </div>
+
+                <div style="background: var(--white); border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 1rem; overflow: hidden;">
+                    <button onclick="toggleFAQ(this)" style="width: 100%; padding: 1.5rem; background: none; border: none; text-align: left; font-size: 1.1rem; font-weight: 600; color: var(--text-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        Do you provide ongoing support and maintenance?
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s ease;"></i>
+                    </button>
+                    <div style="padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                        <p style="padding-bottom: 1.5rem; color: var(--text-light); line-height: 1.6;">Yes, we offer comprehensive support packages including 24/7 monitoring, regular maintenance, software updates, and technical assistance. Support levels can be customized based on your needs.</p>
+                    </div>
+                </div>
+
+                <div style="background: var(--white); border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 1rem; overflow: hidden;">
+                    <button onclick="toggleFAQ(this)" style="width: 100%; padding: 1.5rem; background: none; border: none; text-align: left; font-size: 1.1rem; font-weight: 600; color: var(--text-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        Can your solutions integrate with existing systems?
+                        <i class="fas fa-chevron-down" style="transition: transform 0.3s ease;"></i>
+                    </button>
+                    <div style="padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: all 0.3s ease;">
+                        <p style="padding-bottom: 1.5rem; color: var(--text-light); line-height: 1.6;">Absolutely. Our solutions are designed to integrate seamlessly with existing IT infrastructure, databases, and software systems. We provide APIs and custom integration services as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="content-section">
+        <div class="container">
+            <div style="background: linear-gradient(135deg, var(--accent-color), #c0392b); color: white; padding: 3rem; border-radius: 12px; text-align: center;">
+                <h2 style="margin-bottom: 1rem;">Emergency Support</h2>
+                <p style="margin-bottom: 2rem; opacity: 0.9;">For urgent technical issues or system failures, our emergency support team is available 24/7.</p>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <a href="tel:+15551234567" style="color: white; text-decoration: none; display: flex; align-items: center; background: rgba(255,255,255,0.1); padding: 1rem 2rem; border-radius: 8px; transition: background 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+                        <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>
+                        Emergency Hotline
+                    </a>
+                    <a href="mailto:emergency@interactivesystems.com" style="color: white; text-decoration: none; display: flex; align-items: center; background: rgba(255,255,255,0.1); padding: 1rem 2rem; border-radius: 8px; transition: background 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+                        <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+                        Emergency Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Interactive Systems</h3>
+                    <p>Leading provider of touch and multi-touch solutions for large format displays.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Touch Screen Solutions</a></li>
+                        <li><a href="#">Multi-Touch Systems</a></li>
+                        <li><a href="#">Custom Development</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@interactivesystems.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Innovation City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Interactive Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+</body>
+</html>

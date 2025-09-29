@@ -1,0 +1,9 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <rect x="20" y="20" width="360" height="260" fill="#2980b9" rx="10"/>
+  <rect x="40" y="40" width="320" height="220" fill="#1a5490" rx="8"/>
+  <rect x="60" y="80" width="100" height="80" fill="#85c1e9" rx="5"/>
+  <rect x="180" y="80" width="100" height="80" fill="#85c1e9" rx="5"/>
+  <rect x="300" y="80" width="60" height="80" fill="#85c1e9" rx="5"/>
+  <text x="200" y="240" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Multi-Touch Interface</text>
+</svg>

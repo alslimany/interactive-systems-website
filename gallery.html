@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Interactive Systems</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Interactive Systems</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Our Services</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="projects.html" class="nav-link">Our Projects</a>
+                <a href="clients.html" class="nav-link">Our Clients</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Explore our cutting-edge touch technology solutions in action across various industries and applications.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <button class="btn btn-primary filter-btn active" data-filter="all">All Projects</button>
+                <button class="btn btn-secondary filter-btn" data-filter="education">Education</button>
+                <button class="btn btn-secondary filter-btn" data-filter="retail">Retail</button>
+                <button class="btn btn-secondary filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="btn btn-secondary filter-btn" data-filter="corporate">Corporate</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="content-grid gallery-grid">
+                <div class="content-card gallery-item" data-category="education">
+                    <img src="images/gallery-1.jpg" alt="Interactive Whiteboard in Classroom">
+                    <div class="content-card-body">
+                        <h3>Interactive Whiteboard</h3>
+                        <p>85" multi-touch display installed in a modern classroom, supporting up to 20 simultaneous touch points for collaborative learning.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Education</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Multi-Touch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card gallery-item" data-category="retail">
+                    <img src="images/gallery-2.jpg" alt="Retail Interactive Kiosk">
+                    <div class="content-card-body">
+                        <h3>Retail Interactive Kiosk</h3>
+                        <p>Custom 55" touch kiosk for product browsing and self-service checkout, featuring intuitive interface and robust construction.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Retail</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Kiosk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card gallery-item" data-category="healthcare">
+                    <img src="images/gallery-3.jpg" alt="Healthcare Patient Information System">
+                    <div class="content-card-body">
+                        <h3>Patient Information System</h3>
+                        <p>65" wall-mounted touch display for patient check-in and information access, designed for healthcare environments with antimicrobial coating.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Healthcare</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Wall-Mount</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card gallery-item" data-category="corporate">
+                    <img src="images/gallery-1.jpg" alt="Corporate Meeting Room Display">
+                    <div class="content-card-body">
+                        <h3>Meeting Room Display</h3>
+                        <p>75" collaborative display for conference rooms, enabling wireless presentation sharing and interactive annotations during meetings.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Corporate</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card gallery-item" data-category="retail">
+                    <img src="images/gallery-2.jpg" alt="Digital Signage Display">
+                    <div class="content-card-body">
+                        <h3>Digital Signage Display</h3>
+                        <p>Interactive 98" digital signage solution for shopping centers, featuring dynamic content management and customer engagement tools.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Retail</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Signage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card gallery-item" data-category="education">
+                    <img src="images/gallery-3.jpg" alt="University Collaboration Wall">
+                    <div class="content-card-body">
+                        <h3>University Collaboration Wall</h3>
+                        <p>100" interactive wall installation in university library, supporting multiple simultaneous users for research and group work.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Education</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Large Format</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card gallery-item" data-category="healthcare">
+                    <img src="images/gallery-1.jpg" alt="Medical Imaging Display">
+                    <div class="content-card-body">
+                        <h3>Medical Imaging Display</h3>
+                        <p>High-precision 32" medical grade touch display for radiology applications, featuring 4K resolution and medical certification.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Healthcare</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Medical Grade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card gallery-item" data-category="corporate">
+                    <img src="images/gallery-2.jpg" alt="Digital Lobby Directory">
+                    <div class="content-card-body">
+                        <h3>Digital Lobby Directory</h3>
+                        <p>50" vertical touch directory for corporate lobbies, providing building information, wayfinding, and visitor management capabilities.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Corporate</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Directory</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card gallery-item" data-category="retail">
+                    <img src="images/gallery-3.jpg" alt="Interactive Product Catalog">
+                    <div class="content-card-body">
+                        <h3>Interactive Product Catalog</h3>
+                        <p>42" table-mounted touch display for product exploration, featuring 3D product visualization and detailed specifications.</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 0.5rem;">Retail</span>
+                            <span style="display: inline-block; background: var(--primary-light); color: var(--primary-color); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">Table Mount</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Features -->
+    <section style="background-color: var(--secondary-color); padding: 80px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--text-dark);">Technology Highlights</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Scalable Solutions</h3>
+                    <p>From 32" single-touch displays to 100"+ multi-touch walls, our technology scales to meet any size requirement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Ultra-Fast Response</h3>
+                    <p>Sub-millisecond touch response times ensure smooth, natural interactions that feel instantaneous and precise.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Durable Construction</h3>
+                    <p>Built to withstand heavy use in public environments with scratch-resistant surfaces and robust hardware.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Cross-Platform Support</h3>
+                    <p>Compatible with Windows, macOS, Linux, and Android systems for maximum flexibility and integration options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Inspired by What You See?</h2>
+            <p>Let's create a custom touch solution that perfectly fits your unique requirements and vision.</p>
+            <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Interactive Systems</h3>
+                    <p>Leading provider of touch and multi-touch solutions for large format displays.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Touch Screen Solutions</a></li>
+                        <li><a href="#">Multi-Touch Systems</a></li>
+                        <li><a href="#">Custom Development</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@interactivesystems.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Innovation City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Interactive Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-secondary');
+                    });
+                    this.classList.add('active');
+                    this.classList.add('btn-primary');
+                    this.classList.remove('btn-secondary');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Add hover effects to gallery items
+            galleryItems.forEach(item => {
+                item.style.transition = 'all 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>
