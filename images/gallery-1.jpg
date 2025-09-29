@@ -1,0 +1,9 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <rect x="20" y="20" width="360" height="260" fill="#3498db" rx="10"/>
+  <rect x="40" y="40" width="320" height="220" fill="#2980b9" rx="8"/>
+  <circle cx="200" cy="150" r="40" fill="#85c1e9" opacity="0.8"/>
+  <circle cx="150" cy="120" r="15" fill="#ffffff" opacity="0.8"/>
+  <circle cx="250" cy="180" r="12" fill="#ffffff" opacity="0.8"/>
+  <text x="200" y="240" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Interactive Display</text>
+</svg>
